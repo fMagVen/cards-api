@@ -1,5 +1,7 @@
 package com.cardsapi.api.model;
 
+import java.util.Date;
+
 import com.cardsapi.api.dto.CardsDTO;
 
 import jakarta.persistence.Column;
@@ -34,8 +36,8 @@ public class Card {
     @Column(length = 255, nullable = false  )
     private String fabricante;
 
-    @Column(length = 255, nullable = false  )
-    private String dataFabricacao;
+    @Column( nullable = false  )
+    private Date dataFabricacao;
 
     @Column(length = 10, nullable = false  )
     private float valor;
