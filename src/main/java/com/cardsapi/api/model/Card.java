@@ -2,7 +2,7 @@ package com.cardsapi.api.model;
 
 import java.util.Date;
 
-import com.cardsapi.api.dto.CardsDTO;
+import com.cardsapi.api.dto.CardDTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Card {
 
-    public Card(CardsDTO data){
+    public Card(CardDTO data){
         this.modelo = data.modelo();
         this.fabricante = data.fabricante();
         this.dataFabricacao = data.dataFabricacao();
